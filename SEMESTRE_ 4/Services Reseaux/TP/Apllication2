@@ -1,0 +1,39 @@
+Regler les tables de routage du routeur
+entrer dans le CLI du routeur et tapez
+ip dhcp pool l2i1(nom)
+tapez la commande 
+network @reseau masque-sous-reseau;
+ajouter le passerelle 
+
+default-router @passerelle_routeur
+
+ faire exit 
+ et dire au routeur d'exclure une plage d'adresse en faisaint:
+ ip dhcp ex plage @;
+ 
+ Ajouter un utilisateur sur le serveur (==> entrer dans service);
+ 
+ puis allez sur une machine dans le prompt commande et tapez 
+ ftp @du serveur
+ //Maintenant on est connecte au serveur 
+ 
+ aller dans la machine ou on s'est connecte au serveur et text editor pour creer un fichier .txt
+ ensuite aller a tftp pour verifier si cette fichier est bien enregistrer.
+ Now, aller sur le prompt pour mettre  le fichier qu'on vient de creer dans le serveur  .
+ Verifier bien que vous etes connecte au serveur avant de de mettre la commande
+ put nomfichier.txt
+ 
+ aller dans le serveur dans service , ftp est verifier si le fichier est bien la 
+ Connectez vous au serveur faire un dir et renommer le fichier.txt en fichiercopie.txt
+ 
+ ------------------------------------------------------------------------------------------------------
+ aller dans une autre machine et connectez vous au serveur .
+ telecharger le fichiercopie.txt 
+ 
+ get fichiercopie.txt
+ 
+ maintenant aller sur le tftp pour voir si le fichier est bien telecharger
+ 
+ ------------------------------------------------------------------------------------------------------
+ Ce configuration avait pour but de configurer  des clients dhcp et on essayer de le conecter grace un routeur dhcp;
+ 

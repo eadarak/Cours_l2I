@@ -1,0 +1,20 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+zone "l2i.sn" {
+	type master;
+	file "/etc/bind/db.l2i.sn";
+};
+
+
+//Zone inverse
+
+zone "1.168.192.in-addr.arpa" IN{
+	type master;
+	file "/etc/bind/192.168.1";
+};
+
