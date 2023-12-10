@@ -1,0 +1,25 @@
+-------------------------------------------TD1-----------------------------------------------------------------------------
+
+Q1: Pouvez-vous citer quelques organismes de normalisation
+	Rep => ISO( International Standard Organization),
+Q2: Le reseau telephonique commute est un .......
+	1-	WAN
+	2-	MAN
+	3-	LAN 
+	4-	CAN
+Q3- Combien y a t-il de lien entre 5 equipements reseaux maillees deux a deux?
+	a-	5
+	b-	10 XX
+	c-	15	
+	d-	20
+Q4- L'architecture d'un reseau de telecommunication est definit:
+	a-Le nombre d'equiments terminaux qui composent ce reseau
+	b-Le nombre de commutateurs qui composent ce reseau
+	c-Le nombre de liens qui interconnectent les equipements reseaux
+	d- La methode d'interconnexion des equipements reseaux XX
+---------------------------------------------------------------------------------------------------------------------
+Correction
+Rep2: WAN 
+
+
+telephone fixe ==> commutateur local ==> commutateur ==> commutatateur a transmission secondaire ==> commutateur a transmission international

@@ -1,0 +1,56 @@
+# dhcpd.conf
+#
+# Sample configuration file for ISC dhcpd
+# (add your comments here)
+
+default-lease-time 600;
+max-lease-time 7200;
+
+option subnet-mask 255.255.255.0;
+option broadcast-address 192.168.1.255;
+option routers 192.168.1.254;
+option domain-name-servers 192.168.1.1, 192.168.1.2;
+option domain-name "l2i";
+
+subnet 192.168.1.0 netmask 255.255.255.0 {
+	range 192.168.1.10 192.168.1.100;
+	range 192.168.1.150 192.168.1.200;
+
+
+}
+
+deny unknown-clients;
+subnet 192.168.1.0 netmask 255.255.255.0 {
+	host client1 {
+		hardware ethernet 6c:02:e0:c8:33:a9;
+		fixed-address 192.168.1.30;
+	}	
+	
+	host client2 {
+		hardware ethernet c8:f7:50:3d:66:bd;
+		fixed-address 192.168.1.19;
+	}
+	
+	host client3 {
+		hardware ethernet c8:f7:50:36:4b:3c;
+		fixed-address 192.168.1.18;
+	}
+	
+	host client4 {
+		hardware ethernet a0:1d:48:b4:9f:ee;
+		fixed-address 192.168.1.170;
+	}
+
+	
+}
+
+
+# test de  configuration dhcp
+#default-lease-time 600;
+#max-lease-time 7200;
+
+#subnet 10.10.0.0 netmask 255.255.255.0{
+#	range 10.10.0.15 10.10.0.100
+#	option routers 10.10.0.254;
+#}
+

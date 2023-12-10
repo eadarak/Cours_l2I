@@ -1,0 +1,43 @@
+Ouvrir le packettracer
+
+Ajouter un serveur renomme le en Serveur DHCP;
+Ajouter trois machines, deux Switches et un routeurs 
+A noter que que le machine client 3 est dans le meme reseau que le serveur DHCP et seront relier par le switche S2;
+Et les deux autres machines seront de l'autre reseau, ils seront separer par le switche S1;
+Les deux switches seront relie par le Routeur nommee "Release DHCP"
+
+Maintenant configurer le serveur comme suit:
+--@Ip 10.255.255.2253;
+--PASSERELLE 10.255.255.254
+
+Et le routeur
+interface 0 : 10.255.255.254
+Interface 1: 172.16.255.254
+
+........................................................
+Entrer dans le serveur DHCP et cliquez sur "Service" pour configurer les plages 1 et 2;
+
+
+--
+Pool Name                    Premiere Plage
+Default Gateway              10.255.255.254
+Start IP Address             10.0.0.1
+Subnet Mask                  255.0.0.0
+Maximum Number of Users:     20
+
+cliquez sur ADD pour ajouter la plage;
+
+--
+Pool Name                    Deuxieme Plage
+Default Gateway              172.16.255.254
+Start IP Address             172.16.0.40
+Subnet Mask                  255.255.0.0
+Maximum Number of Users:     50
+
+cliquez sur ADD pour ajouter la plage;
+
+------------
+Maintenant configurer la machine client 3 en DHCP;
+pour cela cliquez sur la machine client3 et puis sur desktop  et afin IP configuration
+maintenant changer le static en DHCP 
+si cela affiche

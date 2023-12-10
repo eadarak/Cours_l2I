@@ -1,0 +1,57 @@
+//afficher les chemins du variable d'environnement
+
+eadarak@eadarak-latitude-7490:~$ echo $PATH 
+==> /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+// Afficher l'utilisateur connecte
+
+eadarak@eadarak-latitude-7490:~$ echo $USERNAME
+==> eadarak
+
+//telecharger un truc directement sur le terminal
+eadarak@eadarak-latitude-7490:~$ wget "URL du lien de telechargement"
+
+eadarak@eadarak-latitude-7490:~$ echo $
+Display all 122 possibilities? (y or n)
+$_                         $COMP_KEY                  $GNOME_SETUP_DISPLAY       $LC_MONETARY               $prev                      $UID
+$_backup_glob              $COMP_LINE                 $GNOME_SHELL_SESSION_MODE  $LC_NAME                   $PS1                       $USER
+$BASH                      $COMP_POINT                $GNOME_TERMINAL_SCREEN     $LC_NUMERIC                $PS2                       $USERNAME
+$BASH_ALIASES              $COMPREPLY                 $GNOME_TERMINAL_SERVICE    $LC_PAPER                  $PS4                       $VTE_VERSION
+$BASH_ARGC                 $COMP_TYPE                 $GROUPS                    $LC_TELEPHONE              $PT8HOME                   $WAYLAND_DISPLAY
+$BASH_ARGV                 $COMP_WORDBREAKS           $GTK_MODULES               $LC_TIME                   $PWD                       $words
+$BASH_ARGV0                $COMP_WORDS                $HISTCMD                   $LESSCLOSE                 $QT_ACCESSIBILITY          $XAUTHORITY
+$BASH_CMDS                 $cur                       $HISTCONTROL               $LESSOPEN                  $QT_IM_MODULE              $XDG_CONFIG_DIRS
+$BASH_COMMAND              $cword                     $HISTFILE                  $LINENO                    $RANDOM                    $XDG_CURRENT_DESKTOP
+$BASH_COMPLETION_VERSINFO  $DBUS_SESSION_BUS_ADDRESS  $HISTFILESIZE              $LINES                     $redir                     $XDG_DATA_DIRS
+$BASH_LINENO               $DESKTOP_SESSION           $HISTSIZE                  $LOGNAME                   $SECONDS                   $XDG_MENU_PREFIX
+$BASHOPTS                  $DIRSTACK                  $HOME                      $LS_COLORS                 $SESSION_MANAGER           $XDG_RUNTIME_DIR
+$BASHPID                   $DISPLAY                   $HOSTNAME                  $MACHTYPE                  $SHELL                     $XDG_SESSION_CLASS
+$BASH_REMATCH              $EPOCHREALTIME             $HOSTTYPE                  $MAILCHECK                 $SHELLOPTS                 $XDG_SESSION_DESKTOP
+$BASH_SOURCE               $EPOCHSECONDS              $IFS                       $OPTERR                    $SHLVL                     $XDG_SESSION_TYPE
+$BASH_SUBSHELL             $EUID                      $IM_CONFIG_PHASE           $OPTIND                    $split                     $XMODIFIERS
+$BASH_VERSINFO             $exclude                   $LANG                      $OSTYPE                    $SRANDOM                   $_xspecs
+$BASH_VERSION              $flag                      $LANGUAGE                  $PAPERSIZE                 $SSH_AGENT_LAUNCHER        
+$COLORTERM                 $FUNCNAME                  $LC_ADDRESS                $PATH                      $SSH_AUTH_SOCK             
+$COLUMNS                   $GDMSESSION                $LC_IDENTIFICATION         $PIPESTATUS                $SYSTEMD_EXEC_PID          
+$COMP_CWORD                $GNOME_DESKTOP_SESSION_ID  $LC_MEASUREMENT            $PPID                      $TERM   
+
+
+//Apres avoir telecharger le webmin, ouvrir avec 
+eadarak@eadarak-latitude-7490:~/Téléchargements/PACKAGE$ sudo dpkg -i webmin_2.010_all.deb 
+//ceci va generer une erreur et vous allez forcer l'installation avec
+
+eadarak@eadarak-latitude-7490:~/Téléchargements/PACKAGE$ sudo apt-get install -f
+
+//puis reinstaller le webmin qui est une interface d'administration
+eadarak@eadarak-latitude-7490:~/Téléchargements/PACKAGE$ sudo dpkg -i webmin_2.010_all.deb
+
+//Afficher la liste des depots du systeme
+eadarak@eadarak-latitude-7490:~$ more /etc/apt/sources.list
+
+//openssh-server c'est pour se connecter a distance sur un serveur.
+
+
+//Pour acceder au webmin on ouvre un explorateur internet et pointer sur https://127.0.0.1:10000/
+
+// si on regarde le depot s'il y'a ubuntu.com c'est pas un depot partenaire.
+
