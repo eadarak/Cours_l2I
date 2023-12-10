@@ -1,0 +1,13 @@
+Ecrire un programme en langage C qui contient les opérations suivantes:
+
+1- Définir un type structure appelé étudiant permettant  de représenter un étudiant avec les champs nom, prénom, numéro (de type chaine de caractères) et note de type réel;
+
+2- Remplir un tableau de 10 étudiants d'une classe avec des informations données par l'utilisateur
+
+3- Afficher les noms, prénoms, numéros et notes des 10 étudiants de la classe.
+
+4- Chercher et afficher la plus grande note de la classe
+
+5- Chercher et afficher le nombre d'étudiants qui ont une note supérieure ou égale à 10.
+
+6- Chercher et afficher la moyenne des notes des étudiants de la classe.

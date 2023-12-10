@@ -1,0 +1,81 @@
+Exercice_1:
+1- Une trame est une donnee encapsulee au niveau de la couche liaison de donnees
+2- struture d'une trame
+   
+    Preambule | SFD | @Mac Destination | @ Mac source | Type de longueur | Donnees | CRC
+     |           |
+     |            ->  Start Frame Délimiteur : indique le début d’une trame (synchronisation trame)
+     |
+     -> Synchronisation des bits
+3- Cocher la bonne reponse
+  a) faux
+  b) vrai
+  c) vrai
+  d) vrai
+  e) faux
+
+Exercice_2:
+1- on peut representer les bits de deux manieres :
+ --> codage (binaire ou codage Rz)
+ --> Modulation (amplitude, frequence ou phase)
+2-  Donner la representation de la trame  01010101010101100111100 (voir cours)
+
+3- citer 3 fonctions de la couche liaison de donnees:
+ - controle des flux et d'erreurs
+ - gerer l'acces de canal de communication
+ 
+Exercice_3:
+1- les  adresses valide ou non valide
+
+ a- non valide car elle contient 7octets au lieu de 6octets
+ b-  valide
+ c- non valide car elle contient la lettre H qui ne fait pas  partie du code hexadecimal
+ d- valide
+ e- valide
+ f- valide mais c'est une adresse de diffusion
+
+2-  les adresses MAC valide pour un hote (peuvent être attribuées à une carte réseau)
+
+ Remarque: Pour faire la verification  il faut regarde si c'est un unicast ie 0 pour le dernier bit du premier octet
+
+ a-  00-AA-00-A6-52-FG : Invalide car la lettre G n'appartient pas au codage hexidecimal
+ b-  1B-10-10-20-20-20 : Invalide car multicast ie 1 pour le dernier bit du premier octet.
+ c-  C0-00-11-A0-13-20 : valide car unicast
+ d-  00-A0-24-00-CD-EF-AA : Invalide car on a 8 octet au lieu de 6 octet.
+ e-  FF:FF:FF:FF:FF:FF : Invalide car adresse de diffusion d'ou multicast.
+ f-  55-00-11-A0-13-20 : Invalide car multicast ie 1 pour le dernier bit du premier octet.
+
+Exercice_5:
+ 1.Si une trame d’adresse MAC de destination FF-FF-FF-FF-FF-FF est émise par PC1, 
+  a- quelles machines recevront cette trame?
+   --> Toutes les machines vont recevoir la trame.
+  b) Cocher les affirmations exactes
+   - le commutateur ajoute l’adresse MAC source dans la table MAC  (oui).
+   - la trame est une trame de diffusion : elle est envoyée à tous les ports (oui) car les messages de diffusions sont diffusees au niveau du lan.
+
+ Remarque:le pont permet de relier deux segments de meme lan. La diffusion s'arrete au niveau local.
+
+2.Si une trame est émise par PC5 en direction de PC3 
+ c) quelles machines recevront cette trame?
+  --> supposant que dans la table mac figure @PC6, Donc les machines qui vont recevoir sont PC3 et PC4;
+ d) Cocher les affirmations exactes
+  - le commutateur ajoute l’adresse MAC source dans la table MAC (non car on suppose que @PC source est dans la table MAC);
+  - la trame est une trame de diffusion : elle est envoyée à tous les ports ( non c'est pas une trame de diffusion );
+
+3.Si une trame est émise par PC1 en direction de PC2 quelles sont les machines qui recevront cette trame?
+ --> Il y a  que PC2 qui va recevoir cette trame.
+
+4.Si une trame est émise par PC1 en direction de PC3 quelles sont les machines qui recevront cette trame ?
+ --> Il y a  que PC2, PC3 et PC4 qui vont recevoir cette trame.
+
+5. Déterminer les domaines de collision et de diffusion de chacun des réseaux suivants
+
+Remarque: Toutes les noeuds partageant le meme canal de communication partage la meme domaine de collission.
+
+
+
+
+
+==================================================================================================================================
+1:04 PM 10/6/2022-- Premiere sauvegarde.
+7:18 PM 10/7/2022-- Deuxieme sauvegarde.

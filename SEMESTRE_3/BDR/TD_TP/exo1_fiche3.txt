@@ -1,0 +1,48 @@
+12:02 06/07/2022
+------------------------------------------ do by me-----------------------------------------------------------------
+
+1-
+SELECTION(ouvrier)
+
+2-donnez le nom, la provenance et la date de coupe de chaque bois
+PRJECTION(nom,provenance,datecoupe)(SELECTION(Bois))
+
+
+
+
+
+-----------------------------------------CORRECTION-----------------------------------------------------------
+1-Affichez la liste des ouvriers.
+  --> PROJECTION(numero,Nom,Prenom,age,Adresse,Anciennete,Niveau,#responsable)(Ouvrier)
+OU
+  --> SELECTION(Ouvrier)
+
+2-Donnez le nom, la provenance et la date de coupe de chaque bois
+  -->PRJECTION(nom,provenance,datecoupe)(Bois)
+
+3-Donnez le nom,le prenom,l'age du chef de l'atelier
+  -->PROJECTION(nom,prenom,age)(SELECTION(#Responsable='Chef')(Ouvrier))
+
+4-Quels sont les armoires concus avec du bois venus d'Abidjan
+  --> SELECTION(Provenance='Abidjan')(JOINTURE(bois.provenance=armoire.provenance)(bois,Armoire))
+
+5-Quels sont les lits concus avec du bois venus de casamance
+  -->SELECTION(Provenance='Casamance')(JOINTURE(bois.provenance=Lits.provenance)(bois,Lits))
+
+6-Combien d’ouvriers de plus de 20 ans compte l’atelier ?
+  -->SELECTION(Age>20)(Ouvrier)
+
+7-Quelle est la somme totale provenant de la vente des meubles ?
+ -->SELECTION(somme(prix))(JOINTURE(ceder.ouvrier=vendre.ouvrier)(Ceder,Vendre))
+--Remarque: La fonction somme permet de faire la somme des prix.---
+
+8-Quels ouvriers sont plus âgés que leurs responsables ?
+  -->R1:PROJECTION(age)(SELECTION(Responsable='Chef')(Ouvrier))
+  -->R2:SELECTION(age>R1)(Ouvrier)
+
+9. Quels ouvriers habitent la même maison qu’un des ouvriers sous sa responsabilité ?
+ -->R1:PROJECTION(adresse)(SELECTION(Resonsable='Chef')(Ouvrier))
+ -->R2:SELECTION(adresse=R1)(Ouvrier)
+
+10. Quels sont les lits non vendus ?
+  -->SELECTION(prix=' ')(JOINTURE(lit.id=vendre.lit)(lit,vendre))

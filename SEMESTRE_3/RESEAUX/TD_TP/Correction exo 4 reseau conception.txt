@@ -1,0 +1,14 @@
+1-
+on peut mettre le repartiteur principal au niveau de la salle 11.
+2-
+on aura besoins de 3 switchs.
+l'un relie les batiments 8,7,6,5 placé en 7.
+l'autre reliant les batiments 4,3,2 et 1 placé en 1.
+et le dernier dans les batiments 10,9,12 et 11 placé en 9 ou 12.
+ET un point Acces.
+3-
+on peut utiliser un cablage utp(mais il n'y aura pas de blindage au detriment de STP).
+4-
+des ordinateurs debureaux qui utiliseront les cables et ou des peripheries finaux sans fil qui utiliseront les points acces.
+
+18:53 01/07/2022

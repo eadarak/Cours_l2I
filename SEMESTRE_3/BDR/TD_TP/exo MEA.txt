@@ -1,0 +1,15 @@
+Un veterinaire  vous demande de l'aide sur la maniere de suivre ces animaux de ses clients.
+Il souhaite avoir pour chaque client : le nom, le prenom, l'adresse complet , le numero de telephone.
+Chaque client possede au moins un animal, mais il peut en posseder plusieurs.
+Pour chaque animal on a besoin de savoir de quelle animal il s'agit , sa date de naissance et son nom
+QUESTION
+Proposer un MCD?
+Donner le MLD correspondant?
+Soit le MLD, ecrit une requete en algebre relationnelle qui permet:
+-d'afficher les clients qui se nomment diop
+-Quel est l'animal le plus  age qui frequente le cabinet
+-Afficher les noms et prenoms des medecins qui ont un numero orange.
+-----------------------------CORRECTION---------------------
+selection(nomclient="Diop")(client)
+selection(ageanimal=Max(age))(Animal)
+Projection(NomMed,PrenomMed)(Selection(NumMed='77%' ou NumMed='78%')(Medecin))

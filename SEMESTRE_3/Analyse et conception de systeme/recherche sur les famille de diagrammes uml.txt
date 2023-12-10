@@ -1,0 +1,15 @@
+Diagrammes les plus utilisés
+Comme n’importe quel type de projet, un projet informatique nécessite une phase d’analyse, suivi d’une étape de conception. Dans la phase d’analyse, on cherche d’abord à bien comprendre et à décrire de façon précise les besoins des utilisateurs ou des clients. Que souhaitent-ils faire avec le logiciel ? Quelles fonctionnalités veulent-ils ? Pour quel usage ? Comment l’action devrait-elle fonctionner ? C’est ce qu’on appelle « l’analyse des besoins ». Après validation de notre compréhension du besoin, nous imaginons la solution. C’est la partie analyse de la solution. Dans la phase de conception, on apporte plus de détails à la solution et on cherche à clarifier des aspects techniques, tels que l’installation des différentes parties logicielles à installer sur du matériel.
+Résumer des différents diagrammes.png
+Ainsi, UML définit 9 types de diagrammes dans deux catégories de vues, les vues statiques et les vues dynamiques.
+Vues statiques:
+Les diagrammes de cas d’utilisation décrivent le comportement et les fonctions d’un système du point de vue de l’utilisateur
+Les diagrammes de classes décrivent la structure statique, les types et les relations des ensembles d’objets
+Les diagrammes d’objets décrivent les objets d ’un système et leurs relations
+Les diagrammes de composants décrivent les composants physiques et l’architecture interne d’un logiciel
+Les diagrammes de déploiement décrivent la répartition des programmes exécutables sur les différents matériels
+Vues dynamiques :
+Les diagrammes de collaboration décrivent les messages entre objets (liens et interactions)
+Les diagrammes d’états-transitions décrivent les différents états d’un objet
+Les diagrammes d’activités décrivent les comportements d’une opération (en termes d’actions)
+Les diagrammes de séquence décrivent de manière temporelle les interactions entre objets et acteur
