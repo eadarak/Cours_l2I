@@ -1,0 +1,55 @@
+Soit le message M = WELCOMETOUASZ
+**Question1 :**
+la formule du chiffrement est C(M,k) = M+k mod 26;
+-Pour W ;
+C(W,5) = 22 + 5 mod 26 <=> C(W,K) = B;
+-Pour E :
+C(E,5) = 4 + 5 <=> C(B,K) = J
+-Pour L 
+C(L, 5) = 11 + 5 <=>C(L,K) = Q
+-Pour C
+C(C,5) = 2 + 5 <=> C(C,K) = H
+-Pour O
+C(O,5) = 14 + 5 <=> C(O,K) = T;
+-Pour M
+C(M,5) = 12 + 5 <=> C(M,K) = R
+-Pour T
+C(T,5) = 19 + 5 <=> C(T,K) = Y
+-Pour U
+C(U,5) = 20 + 5 <=> C(U,K) = Z
+-Pour S
+C(S,5) = 18 + 5 <=> C(S,K) = X
+-Pour Z
+C(Z,5) = 25 + 5 <=> C(Z,K) = E;
+-Pour A
+C(A,5) = 0 + 5 <=> C(C,K) = F
+Avec le chiffrement de Cesar 
+C(M,k) => BJQHTRJYTZFXE
+
+**Question2 :**
+la formule du chiffrement est C(X,k) = (X+k) mod 26;
+
+**Question3 :**
+si on connait la cle K on va appliquer la formule 1;
+
+**Question4 :**
+Si la cle n'est pas connu
+Au pire des cas la formule F sera appliquer 26
+Au meilleur des cas la Formule F sera applique 1
+
+** Question5 **
+Non
+
+**Question6 **
+la formule pour dechiffre C est  F(C)=(C,K) = C - K = M;
+---------------------------------------------------------------------------------------------
+<-- / Correction / -->
+* Question1 ** ==> Correcte ;
+* Question2 ** ==> correcte;
+* Question3 ** ==> la formule mathematique sera applique n fois avec n = length(M);
+* Question4 ** ==> la formule sera appliquee N = n*25 <==> N = 13*25 =325, Au meilleur des cas  
+N = 1*13 = 13;
+* Question5 ** ==> n ne depend que de la taille du message mais N depend de la taille de l'alphabet et de n.
+* Question6 ** ==> la formule de decryption est D(K,X) = (X + 21) mod 26; avec 21 = 26 - K.
+
+Dans la cryptographie (symetrique) moderne la meme cle est utilise pour chiffrer et dechiffrer;

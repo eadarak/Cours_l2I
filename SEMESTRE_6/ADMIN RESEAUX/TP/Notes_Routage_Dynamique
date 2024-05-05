@@ -1,0 +1,7 @@
+Une machine a un cache ARP qui permet de faire la correspondance IP <=> MAC;
+s'il n ya pas de correspondance IP !<=> MAC, la machine va envoyer un ARP;
+le preambule => synchroniser les machines
+
+rip, ospf sont des protocoles de routage interne
+
+la distance administrative pour un routage statique est 1; 0 pour le routage directe

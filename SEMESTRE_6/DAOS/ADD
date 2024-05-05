@@ -1,0 +1,199 @@
+ ********************* ADDD EC *******************************************
+[
+    {
+        "libelleEC": "Algèbre linéaire",
+        "codeEC": "ALG101",
+        "cm": 30,
+        "td": 20,
+        "tp": 15,
+        "tpe": 5,
+        "coefficientEC": 2,
+        "descriptionEC": "Cours d'algèbre linéaire",
+        "dateCreationEC": "2024-01-27",
+        "ue": null,
+        "modules": []
+    },
+  {
+    "libelleEC": "Algèbre linéaire",
+    "codeEC": "ALG101",
+    "cm": 30,
+    "td": 20,
+    "tp": 15,
+    "tpe": 5,
+    "coefficientEC": 2,
+    "descriptionEC": "Cours d'algèbre linéaire",
+    "dateCreationEC": "2024-01-27",
+    "ue": null,
+    "modules": []
+  },
+  {
+    "libelleEC": "Programmation Java",
+    "codeEC": "JAVA202",
+    "cm": 40,
+    "td": 30,
+    "tp": 20,
+    "tpe": 10,
+    "coefficientEC": 3,
+    "descriptionEC": "Cours de programmation en Java",
+    "dateCreationEC": "2024-02-15",
+    "ue": null,
+    "modules":[]
+  },
+  {
+    "libelleEC": "Chimie organique",
+    "codeEC": "CHIM301",
+    "cm": 25,
+    "td": 15,
+    "tp": 10,
+    "tpe": 5,
+    "coefficientEC": 2,
+    "descriptionEC": "Cours de chimie organique avancée",
+    "dateCreationEC": "2024-03-10",
+    "ue": null,
+    "modules":[]
+  }
+]
+
+********************************************************************************************************************
+******************************* ADD EC *****************************************************************************
+[
+  {
+    "idUE": 1,
+    "libelleUE": "Mathématiques",
+    "codeUE": "MATH101",
+    "creditUE": 4,
+    "coefficientUE": 3,
+    "descriptionUE": "Cours de mathématiques avancées",
+    "dateCreationUE": "2024-01-27",
+    "ecs": [],
+    "modules": [],
+    "utilisateur": null
+  },
+  {
+    "idUE": 2,
+    "libelleUE": "Informatique",
+    "codeUE": "COMP202",
+    "creditUE": 3,
+    "coefficientUE": 2,
+    "descriptionUE": "Introduction à l'informatique",
+    "dateCreationUE": "2024-02-15",
+    "ecs": [],
+    "modules": [],
+    "utilisateur": null
+  },
+  {
+    "idUE": 3,
+    "libelleUE": "Chimie",
+    "codeUE": "CHIM101",
+    "creditUE": 3,
+    "coefficientUE": 2,
+    "descriptionUE": "Introduction à la chimie",
+    "dateCreationUE": "2024-03-10",
+    "ecs": [],
+    "modules": [],
+    "utilisateur": null
+  },
+  {
+    "idUE": 4,
+    "libelleUE": "Langues étrangères",
+    "codeUE": "LANG101",
+    "creditUE": 2,
+    "coefficientUE": 1,
+    "descriptionUE": "Cours de langues étrangères",
+    "dateCreationUE": "2024-04-20",
+    "ecs": [],
+    "modules": [],
+    "utilisateur": null
+  },
+  {
+    "idUE": 5,
+    "libelleUE": "Sciences politiques",
+    "codeUE": "POL101",
+    "creditUE": 3,
+    "coefficientUE": 2,
+    "descriptionUE": "Introduction aux sciences politiques",
+    "dateCreationUE": "2024-05-05",
+    "ecs": [],
+    "modules": [],
+    "utilisateur": null
+  }
+]
+*******************************************************************************************************************************
+******************************************** ADD Module ***********************************************************************
+{
+  "libelleModule": "Analyse mathématique",
+  "coursModule": "Cours d'analyse mathématique avancée",
+  "dureeModule": 60,
+  "objectifsModule": "Compréhension approfondie de l'analyse mathématique",
+  "descriptionModule": "Ce module aborde les concepts avancés de l'analyse mathématique.",
+  "dateCreationModule": "2024-01-27",
+   "semestre": null,
+  "enseignements": [],
+  "maquette": null,
+  "ue": null,
+  "ec": null
+}
+{
+  "libelleModule": "Programmation Java",
+  "coursModule": "Cours de programmation en Java",
+  "dureeModule": 45,
+  "objectifsModule": "Maîtriser la programmation Java",
+  "descriptionModule": "Ce module couvre les principes fondamentaux de la programmation en Java.",
+  "dateCreationModule": "2024-02-15",
+   "semestre": null,
+  "enseignements": [],
+  "maquette": null,
+  "ue": null,
+  "ec": null
+}
+{
+  "libelleModule": "Chimie inorganique",
+  "coursModule": "Cours avancé de chimie inorganique",
+  "dureeModule": 50,
+  "objectifsModule": "Approfondir les connaissances en chimie inorganique",
+  "descriptionModule": "Ce module explore les aspects avancés de la chimie inorganique.",
+  "dateCreationModule": "2024-03-10",
+  "semestre": null,
+  "enseignements": [],
+  "maquette": null,
+  "ue": null,
+  "ec": null
+}
+{
+  "libelleModule": "Langues étrangères",
+  "coursModule": "Cours de langues étrangères",
+  "dureeModule": 30,
+  "objectifsModule": "Maîtriser une langue étrangère",
+  "descriptionModule": "Ce module vise à développer les compétences linguistiques dans une langue étrangère.",
+  "dateCreationModule": "2024-04-20",
+   "semestre": null,
+  "enseignements": [],
+  "maquette": null,
+  "ue": null,
+  "ec": null
+}
+{
+  "libelleModule": "Introduction aux sciences politiques",
+  "coursModule": "Cours introductif aux sciences politiques",
+  "dureeModule": 40,
+  "objectifsModule": "Comprendre les fondements des sciences politiques",
+  "descriptionModule": "Ce module explore les concepts de base des sciences politiques.",
+  "dateCreationModule": "2024-05-05",
+  "semestre": null,
+  "enseignements": [],
+  "maquette": null,
+  "ue": null,
+  "ec": null
+}
+***********************************************************************************************************************************
+************************** ADD SEMESTRE *******************************************************************************************
+{
+  "libelleSemestre": "Premier Semestre",
+  "descriptionSemestre": "Début de l'année universitaire 2024-2025",
+  "dateCreationSemestre": "2024-10-01",
+  "classes": [],
+  "module": []
+}
+
+
+

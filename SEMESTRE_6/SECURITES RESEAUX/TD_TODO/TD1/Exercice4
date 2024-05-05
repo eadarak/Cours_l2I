@@ -1,0 +1,36 @@
+Montrer que B peut retrouver le message M.
+A2 = B1 ⊕ a
+or B1 = A1 ⊕ b => A2 = A1 ⊕ b ⊕ a
+=> A2 =  M ⊕ a ⊕ b ⊕ a 
+sachant que a ⊕ a = 0
+donc A2 = M ⊕ b <==> M = A2 ⊕ b;
+---------------------------------
+Montrer que si C a intercepté tous les échanges, il peut également retrouver M.
+A2 = B1 ⊕ a 
+or B1 = A1 ⊕ b 
+B1 = (M ⊕ a) ⊕ b 
+A2 = ((M ⊕ a) ⊕ b) ⊕ a
+A2 = M ⊕(a ⊕ b) ⊕ a 
+A2 = M ⊕ (a ⊕ a) ⊕(a ⊕ b)
+A2 = M ⊕ a ⊕ b 
+=> M = A2 ⊕ a ⊕  b ;
+=======================================================================================
+Correction: 
+* Question1 ** =>
+A2  = B1 ⊕ a 
+    = (A1 ⊕ b) ⊕ a 
+    = (M ⊕ a) ⊕ (b ⊕ a)
+D'apres l'assocativite de l'operateur XOR
+on peut faire : 
+A2  = (M ⊕ b) ⊕ (a ⊕ a) or a ⊕ a = 0 ==>
+A2  = M ⊕ b
+
+Ajoutons b dans A2 <==> A2 ⊕ b = M ⊕ b ⊕ b = M 
+
+* Question2 ** ==>
+C peut faire B1 ⊕ A2 ⊕ A1
+    => A1 ⊕ b ⊕ B1 ⊕ a ⊕ A1
+    => A1 ⊕ b ⊕ A1 ⊕ b ⊕ a ⊕ A1
+    => A1 ⊕ a
+    => M ⊕ a ⊕ a
+    => M

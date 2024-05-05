@@ -1,0 +1,2 @@
+* Question1 **
+On  ne peut pas utiliser  un message synchrone car l'emetteur ne veut pas attendre que le destinataire est recu le message.

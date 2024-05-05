@@ -1,0 +1,20 @@
+**Trouver C le chiffrement de M: C = E(K, M) ?**
+C= E(K,M) = CYSIGDYMGWPLN 
+**Si la clé K n’est pas connu, quel est le nombre maximum de clés N et le nombre minimum de clés n à utiliser pour trouver C ?**
+Le nombre minimum est 1;
+le nombre maximum est 26!-1
+
+**Quelle sera la longueur de la clé pour chiffrer des chiffres et lettres ? Et dans ce cas, quel sera le nombre maximum de clés à utiliser
+pour trouver un cryptogramme ?*
+la longueur de la cle est 36;
+le nombre maximum de cle utiliser est 36!-1
+---------------------------------------------------------------------------------------------------
+<-- / correction / -->
+* Question1 ** ==> correcte
+* Question2 ** ==> correcte
+* Question3 ** ==> correcte
+* Question4 ** ==> J-Y-W-...
+* Question5 ** ==> 
+* Question6 ** ==> [1-2-5-3-6-2]
+* Question7 ** ==> le nombre maximal est l!-1 avec l la taille de la cle
+* Question8 ** ==> M-Y-G-F-U-H f(k-1)= Caractere de la cle exple m <==> 26-13 =13 => M

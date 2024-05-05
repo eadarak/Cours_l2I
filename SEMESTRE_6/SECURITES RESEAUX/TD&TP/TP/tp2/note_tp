@@ -1,0 +1,36 @@
+--En rsa on genere la cle privee et on derive la cle publique
+
+-- Commande --
+openssl genrsa -out rsakey 1024
+-- Générer une paire de clefs RSA ou [rsakey] est le nom de fichier de sauvegarde de la cle de taille 1024
+
+--- Commande de generation de cle privee macle.pem --
+openssl genrsa -out macle.pem 512
+
+/* 
+Si on veux le mettre dans un cle on utilise l'extension pem sinon l'extension n'a pas d'importance
+*/
+
+-- QUESTION 4 --
+/*
+Trouvez la commande et les options permettant de visualiser correctement le contenu d’un fichier
+au format PEM contenant une paire de clefs RSA.
+La commande rsa permet de visualiser le contenu d’un fichier au format PEM contenant une paire de
+clefs RSA.
+*/
+-- Syntaxe --
+openssl rsa -in <fichier> -text -noout
+/*  -- Note --
+L’option -text demande l’affichage décodé de la paire de clefs. L’option -noout supprime la sortie
+normalement produite par la commande rsa [base64]
+
+Les !=  parties sont en hexadecimals sauf [ publicExponent ] qui en base 10
+--
+Détaillez les différents éléments de l’affichage obtenu.
+Les différents éléments de la clef sont affichés en hexadécimal (hormis l’exposant public). On peut
+distinguer le modulus, l’exposant public (qui par défaut est toujours 65537), l’exposant privé, les nombres
+premiers facteurs du modulus, plus trois autres nombres qui servent à optimiser l’algorithme de
+déchiffrement.
+*/
+
+-- Exercice 2: Chiffrement d’un fichier avec des clefs RSA --

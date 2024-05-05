@@ -1,0 +1,30 @@
+Exercice 4 : Propriétés de sécurité
+Soit le protocole de needham-schroeder
+Analyser et trouver les propriétés (services ou objectifs de sécurité) que comporte ce protocole.
+A → B ∶ {Na.A}Kb.
+B → A ∶ {Na.Nb}Ka.
+A → B ∶ {Nb}Kb//
+
+== ==
+
+A envoie a B {Na.A} en le cryptant avec la cle publique de B => confidentialite;
+B envoie a A {Na.Nb}  en le cryptant avec la cle publique de A, sachant que seul B connait 
+Na alors A s'aura que le message vient de B => authenticite, la non-repudiation ;
+A envoie a B {Nb} en le cryptant avec la cle publique de B , ce dernier sait que seul A  connait ;Nb => authenticite et la non repudiation;
+
+== ==
+2. Analyser les protocoles suivant et dire
+- si la donnée s est secrète et
+- si A et B s’authentifient mutuellement ou authentifie mutuellement leur message
+- si les données échangées sont fraîches
+1. A → B ∶ A,s
+2. A → B ∶ {A,s}Kb, avec Kb publique et Kb-1 est privée
+3. A → B ∶ A, {s} Ka-1
+4. A → B ∶ {A, {s} Ka-1} Kb
+5. A ∶génère un nombre fraîche Na
+A → B ∶ {A, B, Na} Kb
+B → A ∶ {A, B, Na, s} Ka.
+A → B ∶ {A, B, Na} Kab
+B → A ∶ {A, B, Na, s} Kab
+
+== == 

@@ -1,0 +1,22 @@
+le DCE genere la synchronisation donc le clock rate sera gerer ici;
+-Routage Dynamique
+etre en (config) # router rip
+=> renseigner les deux reseaux qui encradre le routeur avec;
+network x,
+network y
+
+#######################################################################
+debug ip rip = les informations de mis a jour.
+Les infos. mis a jours entre routeur se fait chaque 30s
+Avec cela on peut voir les information echanger et l'adresse a laquelle les information sont envoyes;
+metric <=> nombree de saut effectues par un routeur pour atteindre l'autre routeur
+
+Router# undebug ip rip = desactives les informations de mis a jour
+
+[120/2] avec 120 => la distance administrative (rip);
+[128/2] avec 128 => la distance administrative (ospf);
+
+
+
+
+

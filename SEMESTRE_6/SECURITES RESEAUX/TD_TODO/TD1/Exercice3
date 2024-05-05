@@ -1,0 +1,19 @@
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------
+* Question1 ** ==> la cle partage k est :
+k = (B)^a mod p or B = g^b mod p;
+k = g^ab mod p;
+
+* Question2 ** ==> les valeurs secrets sont a et b /  g et p sont publiques
+
+* Question3 ** ==> 
+si g = 5; p = 13; a = 3; b = 5;
+la cle partagee devient k = 5^3*5 mod 13 = 12;
+k = 12;
+
+* Question4 ** ==> 
